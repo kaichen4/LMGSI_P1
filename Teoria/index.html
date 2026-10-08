@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, tr, th {
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola</h1>
+    
+    <img src="img/image.jpg" alt="Imatge d'un maduixa">
+    
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <br>
+    <form action="/enviar" method="post">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" placeholder="Nom" required>
+
+      <label for="email">Correu electrònic:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="password">Contrasenya:</label>
+      <input type="password" id="password" name="password">
+
+      <select id="curs" name="curs">
+          <option value="daw1">DAW 1</option>
+          <option value="dam1">DAM 1</option>
+      </select>
+
+      <label for="missatge">Missatge:</label>
+      <textarea id="missatge" name="missatge" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
